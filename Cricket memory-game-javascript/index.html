@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" 0="">
+    <title>Cricket Memory game</title>
+    
+    <script src="static/script.js"></script>
+    <style>
+        .imgdiv{
+            position: relative;
+            display: inline-block;
+            width:150px;
+            height: 150px;
+            line-height: 150px;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        
+        img{
+            width:120px;
+            height: 120px;
+            padding: 10px;;
+        }
+
+        .hide{
+            padding: 10px;
+            visibility: hidden;
+        }
+
+        .match, .showimg{
+            visibility: visible !important;
+        }
+
+    </style>
+</head>
+<body style="color: rgb(174, 30, 30);">
+    <div class="container"style="background-color:rgb(120, 225, 125)">
+        <h1 class ="jumbotron">Cricket Memory game</h1>
+        
+        <button class="btn btn-success" onclick="start()">Start game</button><br><br>
+        <div id="score" style="background-color:rgb(120, 225, 125) ;"></div>
+        <div id="boardgame" ></div>
+    </div>
+    
+</body>
+</html>
